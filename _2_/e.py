@@ -24,15 +24,15 @@ class TextHandler:
                 count += 1
         print(count)
 
+    def _is_special_symbol(self, char: str) -> bool:
+        return char in string.punctuation
+
     def print_palindromes(self):
         palindromes = {word for word in self._words if self._is_palindrome(word.lower())}
         print(', '.join(palindromes))
 
     def _is_palindrome(self, word: str) -> bool:
         return word == word[::-1]
-
-    def _is_special_symbol(self, char: str) -> bool:
-        return char in string.punctuation
 
 
 if __name__ == '__main__':
