@@ -25,6 +25,7 @@ def get_project_names(links: list[str]):
             'www.github.com/python-dev/Project7/',
             'HttPs://GiTHuB.COm/PYtHoN-DeV/PrOJeCt8',
             'https://github.com/-user-/error-service/',
+            'https://github.com/us--er/error-service/',
             'https://github.com/p_y_t_h_o_n_d_e_v/error-service/',
             'https://github.com/???/error-service/',
             'https://github.com/python_dev/error-service-?/',

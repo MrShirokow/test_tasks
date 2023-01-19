@@ -15,7 +15,7 @@ def timeit_func(func: Callable) -> Callable:
         try:
             return func(*args, **kwargs)
         finally:
-            print(f'function {func.__name__} took {(perf_counter() - start):.6f} seconds')
+            print(f'function "{func.__name__}" took {(perf_counter() - start):.6f} seconds')
     return wrapper
 
 
